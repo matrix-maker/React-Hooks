@@ -1,0 +1,9 @@
+.loginForm {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.formInput {
+  margin: 10px;
+}
