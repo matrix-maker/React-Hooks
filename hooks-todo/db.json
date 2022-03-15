@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": "977ca974c31095de8f8a050933e2",
+      "text": "Eat your dinner missy!!!!",
+      "complete": false
+    },
+    {
+      "id": "977ca974c31095de8f8a050933e3",
+      "text": "Do your laundry",
+      "complete": false
+    },
+    {
+      "id": "977ca974c31095de8f8a050913e4",
+      "text": "Wake up early tmrw",
+      "complete": true
+    },
+    {
+      "id": "977ca974c31095de8f8a050903e0",
+      "text": "Pickup mother from airport",
+      "complete": true
+    },
+    {
+      "id": "977ca974c31095de8f8a011933e1",
+      "text": "Go to yoga class tomorrow",
+      "complete": true
+    },
+    {
+      "id": "9037a53e661d409eb666ee96ddf3",
+      "text": "Make dinner reservations",
+      "complete": false
+    },
+    {
+      "id": "03330ad1f66a2b6144b2df387af2",
+      "text": "",
+      "complete": false
+    }
+  ]
+}

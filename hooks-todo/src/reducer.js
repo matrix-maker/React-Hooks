@@ -1,26 +1,20 @@
+import uuidv4 from "./uuidv4";
+
 export default function reducer(state, action) {
-  const uuidv4 = () => {
-    return "xxxxxxxxxxxxxxxxxxxxxxxxxxxx".replace(/[xy]/g, (c) => {
-      var r = (Math.random() * 16) | 0,
-        v = c == "x" ? r : (r & 0x3) | 0x8;
-      return v.toString(16);
-    });
-  };
   switch (action.type) {
-    case "ADD_TODO":
-      if (!action.payload) {
-        return state;
-      }
-      if (state.todos.findIndex((t) => t.text === action.payload) > -1) {
-        return state;
-      }
-      const newTodo = {
-        id: uuidv4(),
-        text: action.payload,
-        complete: false,
+    case "GET_TODOS":
+      return {
+        ...state,
+        todos: action.payload,
       };
-      console.log({ newTodo });
-      const addedTodos = [...state.todos, newTodo];
+    case "ADD_TODO":
+      // if (!action.payload) {
+      //   return state;
+      // }
+      // if (state.todos.findIndex((t) => t.text === action.payload) > -1) {
+      //   return state;
+      // }
+      const addedTodos = [...state.todos, action.payload];
       return {
         ...state,
         todos: addedTodos,
